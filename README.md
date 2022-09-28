@@ -17,16 +17,13 @@ A design framework that looks like the default Kodi theme
 > This project is <b>currently in progress</b> &  <b>not ready for production / usage</b>. We are currently looking for contributors to help with improvents for this project if you are interested in seeing how you can help contribute to this project see the [to-do](.github/to-do.md) list.
   
   
-  
 ## Demo
 
 > WARNING: This is a work in progress, you will find a LOT of responsiveness issues when viewing the demo! 
 
 You can view a live demo of the <b>Estuary</b> framework [here](here) 
 
-<br>
-
-### See also  
+## See also  
 
 <b>Estuary Redux</b> a more modern design of this framework [here](here) 
 
