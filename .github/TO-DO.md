@@ -8,6 +8,10 @@
    - [ ] Match class names / HTML structure with [Estuary Redux](https://github.com/MarketingPipeline/Estuary-Redux)
 - [ ] Create documentation for this project (including examples)
 - [ ] Add any other missing elements etc...
+- [ ] Seperate JS Components in <code>src</code> folder
+  - [ ] Remove any un-necessary JavaScript
+- [ ] Fix Notification Timing > Wait till notification is done till showing next one (JavaScript)
+- [ ] Improve photo gallery > start gallery on click / stop fetching photos on exit click (JavaScript)
 - [ ] Minimize need for JavaScript components etc. (try to find work arounds for pure CSS if possible)
 
 
