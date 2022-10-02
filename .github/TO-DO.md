@@ -13,6 +13,7 @@
 - [ ] Fix Notification Timing > Wait till notification is done till showing next one (JavaScript)
 - [ ] Minimize need for JavaScript components etc. (try to find work arounds for pure CSS if possible)
 - [ ] Use <code>:trigger</code> events to for all menus / screens etc. To remove need for JS (CSS / HTML)  - refer to [Estuary Redux](https://github.com/MarketingPipeline/Estuary-Redux) for usage of <code>trigger-page</code> in HTML source. 
+- [ ] Find more contributors to help with this project! 
 
 
 ## Notes 
