@@ -1,0 +1,1801 @@
+<!----- 
+
+This was taken from Github.com/MarketingPipeline/Bodi 
+
+Made by Jared Van Valkengoed from - https://github.com/MarketingPipeline
+
+A special reminder to Jayce, you can do anything you set your mind too. 
+
+DO NOT REMOVE THIS NOTICE. 
+-------->
+<head>
+    <script src="https://kit.fontawesome.com/d5fba335cd.js" crossorigin="anonymous"></script>
+  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" crossorigin="anonymous"></script>
+    <LINK href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css"> 
+  
+ 
+    <LINK href="assets/style.css" rel="stylesheet" type="text/css">
+  <title>Bodi UI </title>
+</head>
+<div class="clock">
+  <h1 id="Clock"></h1>
+</div>
+
+
+<div class="s-layout">
+<!-- Sidebar -->
+<div class="s-layout__sidebar">
+  <a class="s-sidebar__trigger" href="#0">
+     <i class="fa fa-bars"></i>
+  </a>
+  
+  <nav class="s-sidebar__nav">
+     <div class="TopNav">
+  <a href="#PowerMenu-Popup" id="PowerOff_Btn" class="TopNavHoverEffect"><i class="fa fa-power-off"></i>
+      
+    <a href="#VideoPlayer-Popup" id="Settings_Menu_Btn" class="TopNavHoverEffect"><i class="fa fa-gear"></i>
+ 
+   <a href="#Search-Menu-Popup" id="Search_Menu_Btn" class="TopNavHoverEffect"><i class="fa fa-search"></i>
+
+      </div>
+             
+     <ul>
+        <li>
+           <a class="s-sidebar__nav-link" href="#home">
+              <i class="fa fa-home"></i><em>Home</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#tv">
+             <i class="fa fa-tv"></i><em>TV</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#music">
+              <i class="fa fa-music"></i><em>Music</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#0">
+              <i class="fa fa-star"></i><em>Favorites</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#videos">
+              <i class="fa fa-film"></i><em>Videos</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#0">
+              <i class="fa fa-photo"></i><em>Photos</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#weather">
+              <i class="fa fa-cloud"></i><em>Weather</em>
+           </a>
+        </li>
+        <li>
+           <a class="s-sidebar__nav-link" href="#addons">
+              <i class="fa fa-box"></i><em>Addons</em>
+           </a>
+        </li>
+       
+       
+       
+     </ul>
+  </span>
+</div>
+
+<!-- Content -->
+       <!-- Home Page -->
+<main class="s-layout__content" id="home">
+  
+      <h1 id="HomePage_Title">Home Page</h1>
+    <!-- Library Cards Container --> 
+    <div class="swiper-overflow-container">
+  <div class="homepage-items-container py-5">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Library Cards Slides -->
+        <div class="swiper-slide">
+          <a href="#settings">
+          <div class="item" id="swipe_card_item">
+            <div class="image" > <img class="image"
+     src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg"
+     alt="Grapefruit slice atop a pile of other slices">
+</div>
+            
+            
+       
+            <p>Full Screen Window</p>
+          </div>
+        </div>
+          </a>
+        <div class="swiper-slide">
+          <a href="#PowerMenu-Popup">
+          <div class="item" id="swipe_card_item">
+            <div class="image"><img class="image"
+     src="https://naruhodo.repop.jp/wp-content/uploads/2017/11/coffee-beans.jpg"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Pop up Window</p>
+          </div>
+        </div>
+          </a>
+        <div class="swiper-slide">
+            <a href="#VideoPlayer-Popup">
+          <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+     src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/512/video512x512.png"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Video Player</p>
+          </div>
+        </div>
+          </a>
+        <div class="swiper-slide">
+             <a href="#OnScreenKeyboard-Popup">
+        <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+     src="https://iconarchive.com/download/i103306/vcferreira/firefox-os/keyboard.ico"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Full screen keyboard</p>
+          </div>
+        </div>
+          </a>
+        <div class="swiper-slide">
+          <a href="#Dialog-Menu-1">
+             <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://cdn4.iconfinder.com/data/icons/refresh_cl/256/Windows/Windows_Download.png"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Progress Window</p>
+          </div>
+        </div>
+          </a>
+        
+       
+        
+    <div class="swiper-slide">
+          <a href="#"  onclick="ChangeVideoSource('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4', 'Video Title Example','Video Genre'); UpdateVideoCardInfo('https://m.media-amazon.com/images/M/MV5BMTczMDg2MzkwNl5BMl5BanBnXkFtZTcwNTY0MTM0MQ@@._V1_.jpg', 'Trailer Park Boys: The Movie','The Movie Description Goes Here!');">
+          <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Change Video SRC</p>
+          </div>
+        </div>
+          </a>
+        
+        
+        <div class="swiper-slide">
+          <a href="#Youtube-VideoPlayer-Popup">
+             <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/originals/4e/ec/e4/4eece43baaad059ce2e4c462d30743d2.png"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Photo Gallery</p>
+          </div>
+        </div>
+          </a>
+        
+        <div class="swiper-slide">
+          <a href="#"  onclick="ShowNotification('fa fa-check-square', 'Addon Update Found:',  'This is just a demo example! <br> This was built by <br>  Jared Van Valkengoed!', 'blue'); return false;">
+             <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/originals/4e/ec/e4/4eece43baaad059ce2e4c462d30743d2.png"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Show Notification</p>
+          </div>
+        </div>
+          </a>
+        
+        
+        
+          <div class="swiper-slide">
+          <a href="#hello"  onclick="ShowNotification('fas fa-comment', 'Notification 2', 'You pushed this notification via Javascript Arguments<br> Cool Huh?'); return false;">
+             <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/originals/4e/ec/e4/4eece43baaad059ce2e4c462d30743d2.png"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Show Another Notification</p>
+          </div>
+        </div>
+          </a>
+        
+        
+         <div class="swiper-slide">
+          <a href="#"  onclick="ChangeVideoSource('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3', 'Rockstar','Post Malone, 21 Savage','https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg'); UpdateVideoCardInfo('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg', 'Album Title Goes Here','Track list goes here');">
+          <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Play Music In Video Player</p>
+          </div>
+        </div>
+          </a>
+        
+        
+        
+        
+         <div class="swiper-slide">
+          <a href="#"  onclick="ChangeVideoSource('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Marshmello%20-%20Silence%20ft.%20Khalid.mp3', 'Silence','Marshmellow','https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/silence-album-cover.jpg'); UpdateVideoCardInfo('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/silence-album-cover.jpg', 'Album Title Goes Here','Track list goes here');">
+          <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Play Song By Marshmellow</p>
+          </div>
+        </div>
+          </a>
+       
+        
+        
+        
+        
+         <div class="swiper-slide">
+          <a href="#"  onclick="VideoPlayList();">
+          <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Toggle PlayList Mode On</p>
+          </div>
+        </div>
+          </a>
+        
+        
+        
+        
+         <div class="swiper-slide">
+          <a href="#"  onclick="addItemsToPlaylist('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3', 'Rockstar','Post Malone, 21 Savage','https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg');">
+          <div class="item" id="swipe_card_item">
+                <div class="image"><img class="image"
+src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
+     alt="Grapefruit slice atop a pile of other slices"></div>
+            <p>Add Item To Playlist</p>
+          </div>
+        </div>
+          </a>
+        
+        
+        
+        
+      </div>
+
+    </div>
+
+  </div>
+</div>
+ 
+
+  
+  
+    
+</main>
+      
+       
+<!-- TV Menu Section -->    
+<section id='tv'>
+   <div class="EmptyLibraryMessage">
+    <p>Your library is currently empty. In order to populate it with your personal media, enter<br> files section, add a media source and configure it. After the source has been added and <br>indexed you will be able to browse your library history. </p>
+     <button class="Enter_Files_btn">Enter Files Section</button>
+     <button class="Remove_Menu_Item_btn">Remove This Menu Item</button> 
+     
+  </div>
+  
+  
+  </section>  
+       
+       
+<!-- Music Menu Section -->    
+  <section id='music'>
+    <h1 id="Categories_Title">Music</h1>
+    <!-- Library Cards Container --> 
+    <div class="swiper-overflow-container">
+  <div class="library-items-container py-5">
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Library Cards Slides -->
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>World</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Second</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Thrid</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Four</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Five</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Six</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Seven</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Eight</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Nine</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Ten</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Eleven</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    
+   
+  </section>    
+       
+   
+       
+       
+ <!-- Video Menu Section -->    
+  <section id='videos'>
+    <header class="header">
+      <div class="header__navbar">
+        <nav class="navbar">
+          <div class="SectionTitle">
+           
+            <h2>Videos/</h2>
+            <h3 style="color: white">Sort By Date</h3>
+          </div>
+     
+      </div>
+      <div class="header__left">
+        <div class="slider" >
+          <p onclick="ShowOptionsMenu();" id="OptionMenu_Button"> 
+             <i class="fa fa-gear"></i>
+            <span>Options</p></a>
+   <div class="Icon_Section"><i class="fa fa-folder fa-5x"></i>
+
+   </div>    
+   <p id="ItemLibrary_NoInfoText">No Information Avaliable</p>       
+    
+        </div>
+        
+          <div class="Library_Item_Details_Section">
+                   <img src="https://variety.com/wp-content/uploads/2020/05/the-simpsons-1.png">
+            <p>Hello world - keepllookling for awesome projects made by me! Test one twooooooooooooooo lresdcsdfa</p>
+        </div>
+            
+            
+      </div>
+      <div class="header__right">
+    
+
+
+
+      <ul>
+        <li><i class="fa fa-power-off"></i>    Built by <b>Jared Van Valkengoed</b></li>
+	    <li onmouseover="Show_NoInfo_Item();"  id="#NoInfoItem">Scroll Over Me To  "No Info Message"</li>
+	    <li onmouseover="Hide_No_Info_Item();" id="#InfoItem">Scroll Over Me To Show Video Poster</li>
+      <li>Or Try Scrolling Down!</li>
+        <a href="#"><li>Click To Go Back To Home Screen</li></a>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+       </ul>
+	    </div>
+
+          
+        </div>
+    </header>
+  </section>    
+       
+        <!-- Options Menu For Video Library Section Section -->      
+
+        <!--- Left Hand Slide in Options Menu---->
+   
+<div class='Options_Menu_Container'> 
+   <section  id ="Options_Menu">
+     
+
+      <ul>
+         <p style="height:26px;background:black;"></p>
+        <p style="height:20px;"> View Options</p>
+       <li>Sort by <b>Name</b></li></a>
+        <li>Order <b>Ascending</b></li>
+      <li>Search</li>
+	    <li>Filter</li>
+       <p style="height:20px;"> Actions</p>
+	    <li onclick="HideOptionsMenu();">Update Library (Click To Hide This Menu)</li>
+       </ul>
+    
+   </section>
+   
+   </div>
+ <!--- End of --> 
+       
+       
+       
+   
+       
+ <!-- Addon Menu Section -->    
+  <section id='addons'>
+    <h1 id="Categories_Title">Addons</h1>
+    <!-- Library Cards Container --> 
+    <div class="swiper-overflow-container">
+  <div class="library-items-container py-5">
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Library Cards Slides -->
+           <div class="swiper-slide">
+          <a href="#addonexample1">
+          <div class="item" id="swipe_card_item">
+            <div class="image" > <img class="image"
+     src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg"
+     alt="Grapefruit slice atop a pile of other slices">
+</div>
+            
+            
+       
+            <p>Addon Example</p>
+          </div>
+        </div>
+          </a>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Second</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Thrid</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Four</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Five</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Six</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Seven</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Eight</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Nine</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Ten</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Eleven</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    
+   
+  </section>    
+       
+         
+       
+       
+ <!-- Weather Menu Section -->    
+  <section id='weather'>
+    <h1 id="Categories_Title">Weather</h1>
+    <!-- Library Cards Container --> 
+    <div class="swiper-overflow-container">
+  <div class="library-items-container py-5">
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Library Cards Slides -->
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>First</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Second</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Thrid</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Four</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Five</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Six</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Seven</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Eight</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Nine</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Ten</p>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="item" id="swipe_card_item">
+            <div class="image"></div>
+            <p>Eleven</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+</div>
+    
+   
+  </section>    
+       
+       
+         
+ <!-- Weather Menu Section -->    
+  <section id='SearchResults'>
+   <div id="SearchedText">
+     
+    </div>
+   
+  </section>       
+       
+       <script>
+         
+
+//This variable sets how long we wait between images
+var minutes = 0.1;
+
+//This variable is the location of our JSON gallery
+var galleryUrl = "https://cdn.rawgit.com/dconnolly/chromecast-backgrounds/master/backgrounds.json";
+var imageList;
+
+function cycleImage() {
+  var imageNumber = Math.floor((Math.random() * imageList.length) + 1);
+  showImage(imageList[imageNumber]['url']);
+  setTimeout (cycleImage,minutes*60*1000);
+}
+
+function showImage(imageUrl) {
+  document.getElementById("PhotoGallery").src=imageUrl;
+}
+
+
+async function fetchDataAsync(url) {
+    const response = await fetch(url);
+    imageList = (await response.json());
+      cycleImage();
+}
+
+fetchDataAsync(galleryUrl);
+
+
+       </script>
+       
+       
+       <script>
+         
+         
+function KeyBoardCancel(){
+  var  KeyboardInput = document.querySelector('.text');
+  KeyboardInput.textContent = "";
+}
+
+         
+         
+  function ChangeVideoSource(src,title,genre, albumCoverArt) {
+    
+    
+    var progressFill = document.querySelector('.progress-filled');
+	progressFill.style.width = `0px`
+    
+    var Video = document.getElementById("video")
+  var VideoTitle = document.getElementById("VideoTitle")
+  var VideoGenre = document.getElementById("VideoGenre")
+   
+   var AlbumCoverContainer = document.querySelector('.AlbumCoverContainer');
+  ResultVolumeSettings();
+   
+      var PlayerOverlay = document.getElementById("VideoPlayer-Popup")
+      var AlbumCoverProgress=  document.getElementById("album_cover_progress");
+    
+  var AlbumCoverProgressSlider=  document.getElementById("albumcoverprogress_filled");  
+
+  
+   if (albumCoverArt) {
+
+ var AlbumCoverImage =  document.getElementById("AlbumArt").src=albumCoverArt;
+     
+      document.getElementById("AlbumArtSong").innerHTML = title;
+     
+ document.getElementById("AlbumArtArtist").innerHTML = genre;     
+   
+ AlbumCoverProgress.style.opacity = "1";      
+ AlbumCoverContainer.style.display = "block";      AlbumCoverContainer.style.backgroundImage="red";
+     
+  
+  
+ PlayerOverlay.style.background="linear-gradient(to right, rgb(6, 38, 52), rgb(7, 51, 65))";
+  } else {
+       AlbumCoverProgress.style.opacity = "0";        
+       
+      PlayerOverlay.style.background=" rgba(0, 0, 0, 0.7)";
+   
+    
+   
+    
+    
+    
+    AlbumCoverContainer.style.display = "none"; 
+     var AlbumCoverImage =  document.getElementById("AlbumArt").src="";   
+  }
+  
+    
+    
+  
+   Video.src = src;
+  VideoTitle.innerHTML = title;
+  VideoGenre.innerHTML = genre;}
+         
+         var KeyboardInput = (function(GetKeyboardInput) {
+  return function() {
+      var Final_Keyboard_Text = document.querySelector('.text');
+    GetKeyboardInput = Final_Keyboard_Text.textContent
+    Final_Keyboard_Text.textContent = "";
+    return GetKeyboardInput;
+  
+  }
+}());
+         
+         
+           function KeyBoardDemo() {
+      document.getElementById("SearchedText").innerHTML = ("No search results for   " + KeyboardInput());
+
+};
+       </script>
+       
+
+        
+ <!-- Settings Section -->    
+  <section id="settings">
+      
+
+    
+   <div class='Settings-Menu-Wrapper'>
+  <div class='settings-row-1'>
+    <div class='column'>
+      <div class='first-column'>
+        
+ <a href="#">
+ <div class="card feature-card">
+                                <div class="card-body">
+                                     <i class="fa fa-play fa-2x"></i>
+                                  <p><b>Menu Item</b></p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='second-column'>
+      <a href="#">
+ <div class="card feature-card">
+                                <div class="card-body">
+                                     <i class="fa fa-play fa-2x"></i>
+                                  <p><b>Click To Go Back</b></p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='third-column'>
+        <a href="#">
+ <div class="card feature-card">
+                                <div class="card-body">
+                                     <i class="fa fa-play fa-2x"></i>
+                                  <p><b>Click To Go Back</b></p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+  </div>
+      
+    <div class='settings-row-2'>
+    <div class='column'>
+      <div class='first-column'>
+        
+ <a href="#">
+ <div class="card feature-card">
+                                <div class="card-body">
+                                     <i class="fa fa-play fa-2x"></i>
+                                  <p><b>Click To Go Back</b></p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='second-column'>
+      <a href="#">
+ <div class="card feature-card">
+                                <div class="card-body">
+                                     <i class="fa fa-play fa-2x"></i>
+                                  <p><b>Click To Go Back</b></p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+    <div class='column'>
+      <div class='third-column'>
+        <a href="#">
+ <div class="card feature-card">
+                                <div class="card-body">
+                                     <i class="fa fa-play fa-2x"></i>
+                                  <p><b>Click To Go Back</b></p>
+                                </div>
+                            </div>
+      </div>
+    </div>
+  </div>  
+      
+                             
+       
+       
+       
+       
+       
+  </section>          
+       
+ 
+ <!-- Other Menus -->        
+      <!-- Power Off Menu  --> 
+<div id="PowerMenu-Popup" class="overlay"><a href="#">
+	
+</a><div class="power-menu"><a href="#">
+    <div class="power-title">
+      <b> Options</b>
+    </div>
+
+      </a><div id="power-context-menu"><a href="#">
+</a><ul><a href="#">
+  
+   </a><li><a href="#">Power Off System</a></li>
+  <li><a href="#">Custom Shutdown Timer</a></li>
+  <li><a href="#">Suspend</a></li>
+  <li><a href="#">Reboot</a></li>
+ 
+</ul>
+</div>
+    </div>
+
+</div>
+     
+       
+       <!-- Power Off Menu  --> 
+<div id="Dialog-Menu-1" class="overlay">
+
+<div class="Dialog-Menu-1">
+
+    <div class="Dialog-Menu-1-title">
+      <b> Progress Window</b>
+    </div>
+
+    <div class="Dialog-Menu-1-content">
+        <p id="ProgressDownload">
+           4.96 MB of 89.93 MB
+      </p>
+            <br>
+            <br>
+            Speed: 1702 kb/s ETA : 00:51
+            <br>
+            
+            <br>
+            <br>
+            <span class="Dialog-Menu-1-slider">
+                <span role="position" style="width:0%;"></span>
+            </span>
+        </p>
+      <br>
+      <center> <a   onclick="ProgressBarAnimation();" class="Dialog-Menu-1_Btn">Start Progress Bar</a> <a href="#"  class="Dialog-Menu-1_Btn">Cancel</a></center>
+    </div>
+
+</div>
+
+</div>
+       
+       
+       
+       
+       
+  <!-- Search Menu Menu  --> 
+<div id="Search-Menu-Popup" class="overlay">
+	
+<div class="power-menu">
+    <div class="power-title">
+      <b>Search</b>
+    </div>
+
+      <div id='power-context-menu'>
+<ul>
+   <li><a href='#OnScreenKeyboard-Popup'>Search local library</a></li>
+     <li><a href='#OnScreenKeyboard-Popup'>Search add-ons</a></li>
+     <li><a href='#OnScreenKeyboard-Popup'>Search Youtube</a></li>
+     <li><a href='#OnScreenKeyboard-Popup'>Search TheMovieDB</a></li>
+ 
+</ul>
+</div>
+    </div>
+
+</div>      
+       
+       
+       
+
+  <!-- OnScreenKeyboard  --> 
+<div id="OnScreenKeyboard-Popup" class="KeyBoard_overlay">
+	
+<script type="module">'use strict';
+const container = document.querySelector('.keyboard_container');
+const textarea = document.querySelector('.text');
+const alphabet = document.querySelectorAll('.alpha');
+const key = document.querySelectorAll('.key');
+
+var SpaceBar = document.getElementById('test');
+let checkCaps = false;
+let checkLights = false;
+//CAPSLOCK
+const caps = function () {
+  if (checkCaps == false) {
+    for (let i = 0; i < alphabet.length; i++) {
+      let getAlpha = alphabet[i].textContent;
+      const up = getAlpha.toUpperCase();
+      alphabet[i].textContent = up;
+      SpaceBar.style.background = "#1085a8";
+      SpaceBar.style.borderRadius = "100%";
+      SpaceBar.style["boxShadow"] = "0 0 5px #1085a8";
+    }
+    checkCaps = true;
+  } else {
+    for (let i = 0; i < alphabet.length; i++) {
+      let getAlpha = alphabet[i].textContent;
+      const low = getAlpha.toLowerCase();
+      alphabet[i].textContent = low;
+      SpaceBar.style.borderRadius = "0%";
+      SpaceBar.style["boxShadow"] = "0 0 0px";
+      SpaceBar.style.background = "#192123";
+    }
+    checkCaps = false;
+  }
+};
+//Lights
+const blink = function () {
+  if (checkLights == false) {
+    key.forEach((key) => key.classList.add('lightOn'));
+    checkLights = true;
+  } else {
+    key.forEach((key) => key.classList.remove('lightOn'));
+    checkLights = false;
+  }
+};
+//Event listener
+container.addEventListener('click', function (e) {
+  if (e.target.classList.contains('key')) {
+    if (e.target.classList.contains('spaceBar')) {
+      textarea.textContent += ' ';
+    }
+    if (e.target.classList.contains('caps')) {
+      caps();
+    }
+    if (e.target.classList.contains('content')) {
+      const getContent = e.target.textContent;
+      textarea.textContent += getContent;
+    }
+    if (e.target.classList.contains('backSpace')) {
+      textarea.textContent = textarea.textContent.substring(
+        0,
+        textarea.textContent.length - 1
+      );
+    }
+    if (e.target.classList.contains('light')) {
+      blink();
+    }
+  } else {
+    return;
+  }
+});
+  
+  
+
+  </script>
+      <h1 class="heading">Enter Search String</h1>
+      <textarea
+        name="textarea"
+        id=""
+        cols="30"
+        rows="5"
+        class="text"
+        readonly
+      ></textarea>
+      <div class="keyboard__body">
+        <div class="keyboard_container">
+          <div class="row">
+            <button class="key content">1</button
+            ><button class="key content">2</button
+            ><button class="key content">3</button
+            ><button class="key content">4</button
+            ><button class="key content">5</button
+            ><button class="key content">6</button
+            ><button class="key content">7</button
+            ><button class="key content">8</button
+            ><button class="key content">9</button
+            ><button class="key content">0</button
+            >
+          </div>
+          <div class="row">
+            <button class="key alpha content">q</button
+            ><button class="key alpha content">w</button
+            ><button class="key alpha content">e</button
+            ><button class="key alpha content">r</button
+            ><button class="key alpha content">t</button
+            ><button class="key alpha content">y</button
+            ><button class="key alpha content">u</button
+            ><button class="key alpha content">i</button
+            ><button class="key alpha content">o</button
+            ><button class="key alpha content">p</button>
+          </div>
+          <div class="row">
+            <button class="key alpha content">a</button
+            ><button class="key alpha content">s</button
+            ><button class="key alpha content">d</button
+            ><button class="key alpha content">f</button
+            ><button class="key alpha content">g</button
+            ><button class="key alpha content">h</button
+            ><button class="key alpha content">j</button
+            ><button class="key alpha content">k</button
+            ><button class="key alpha content">l</button>
+            <button class="key alpha content">:</button>
+          </div>
+          <div class="row">
+            <button class="key alpha content">z</button
+            ><button class="key alpha content">x</button
+            ><button class="key alpha content">c</button
+            ><button class="key alpha content">v</button
+            ><button class="key alpha content">b</button
+            ><button class="key alpha content">n</button
+            ><button class="key alpha content">m</button>
+              <button class="key alpha content">.</button>
+              <button class="key alpha content">/</button>
+            <button class="key alpha content">@</button>
+            
+          </div>
+          <div class="row">
+            <button class="key caps" id="test">Caps</button
+            ><button class="key spaceBar"></button
+            ><button class="key light">
+              <i class="fa fa-lightbulb" class="light"></i>
+            </button>
+            
+            <button class="key backSpace">&larr;</button>
+            
+            <a href="#SearchResults" onclick="KeyBoardDemo();" class="KeyBoard_Ok_Btn" style="float: right;">Ok</a>    
+            
+            <a href="#" class="KeyBoard_Cancel_Btn" onclick="KeyBoardCancel();" style="float: right;">Cancel</a>  
+            
+            <a href="#" class="Lang_QWERTY_Btn" style="float: right;">English QWERTY</a>  
+            
+             <a href="#" class="IP_Address_Btn" style="float: right;">IP Address</a>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>             
+    
+    
+    
+      <!-- Video Player  --> 
+<div id="VideoPlayer-Popup" class="overlay">
+  
+<script type="text/javascript">
+  
+
+/// Calcuate Video Time(s) 
+
+const interval = setInterval(function() {
+  
+   // This calcuates the bottom video duration
+     vid = document.getElementById("video");
+  	var nt = vid.currentTime * (100 / vid.duration);
+	curtimetext = document.getElementById("curtimetext");
+	durtimetext = document.getElementById("durtimetext");
+  
+var curmins = Math.floor(vid.currentTime / 60);
+	var cursecs = Math.floor(vid.currentTime - curmins * 60);
+  
+   // DurHours is used for Ends At Function
+  var durhours = Math.floor(vid.currentTime / 3600);
+  // DurHours is used for Ends At Function
+  var durhours = Math.floor(vid.currentTime / 3600);
+	var durmins = Math.floor(vid.duration / 60);
+	var dursecs = Math.floor(vid.duration - durmins * 60);
+	if(cursecs < 10){ cursecs = "0"+cursecs; }
+	if(dursecs < 10){ dursecs = "0"+dursecs; }
+	if(curmins < 10){ curmins = "0"+curmins; }
+	if(durmins < 10){ durmins = "0"+durmins; }
+	curtimetext.innerHTML = curmins+":"+cursecs;
+	durtimetext.innerHTML = durmins+":"+dursecs;
+  
+  
+  
+  
+   // This is required for Ends At Hour
+  
+    var EndsAt_Hours = durmins - curmins;  
+  var EndsAt_Mins = durmins - curmins;
+  
+  
+  
+     // Video Ends at Function 
+  
+      var now = new Date();
+     var TwentyFourHour = now.getHours();
+  var nowHours = now.getHours();
+  
+   var mid = 'PM';
+     if(TwentyFourHour < 12) {
+       mid = 'AM';
+    }  
+  if (nowHours == 0) {
+    nowHours = 12;
+  }
+  var nowMinutes = now.getMinutes();
+  if (nowMinutes < 10) {
+    nowMinutes = "0" + nowMinutes;
+  }
+  
+    var hours = durhours;
+    var addHours = parseFloat(hours) + parseFloat(nowHours);
+    var minutes = EndsAt_Mins;
+    var addMinutes = parseFloat(minutes) + parseFloat(nowMinutes);
+    if (hours == '') {
+      addHours = nowHours;
+    }
+    if (minutes == '') {
+      addMinutes = nowMinutes;
+    }
+    if (addMinutes >= 60) {
+      var newHours = ((minutes / 60));
+      if (newHours > 1) {
+        addMinutes = addMinutes % 60 + newHours * (newHours % 1);
+        addMinutes = Math.floor(addMinutes);
+        addHours = addHours + Math.floor(newHours);
+      } else {
+        addMinutes = addMinutes % 60 + newHours * (newHours % 1);
+        addMinutes = Math.floor(addMinutes);
+        addHours = addHours + 1;
+      }
+    }
+    if (addHours > 12) {
+      addHours = addHours % 12;
+      if (addHours == 0) {
+        addHours = 12;
+      }
+    }
+    if (addMinutes < 10) {
+      addMinutes = "0" + addMinutes;
+    }
+    var total = addHours + ":" + addMinutes;
+    
+    	Duration_Minutes = document.getElementById("minutes");
+  
+  Duration_Hours = document.getElementById("hour");
+  
+   Duration_Hours.innerHTML = addHours;
+  
+   Duration_Minutes.innerHTML = addMinutes+mid;
+  
+  
+  
+  
+  
+  
+ }, 100);
+
+
+  
+</script>  
+
+  <script type="text/javascript">
+function Stop_Player() {
+  
+    var AlbumCoverProgress=  document.getElementById("album_cover_progress");
+     AlbumCoverProgress.style.opacity = "0";        
+       
+     var AlbumCoverContainer = document.querySelector('.AlbumCoverContainer');
+     AlbumCoverContainer.style.display = "none"; 
+  
+  
+     video.src = "";
+  VideoTitle.innerHTML = "";
+  VideoGenre.innerHTML = "";
+     video.pause();
+} 
+    
+  
+  </script>
+  
+  
+<script type="module">
+var player_background = document.querySelector('.bg-video-wrap');
+var video = document.querySelector('#video');
+var pauseBtn = document.querySelector('.pause-button');
+var playBtn = document.querySelector('.play-button');
+
+
+var Video_Settings_Menu = document.querySelector('.video-settings-menu');
+  
+var Video_Settings_Menu_Items = document.querySelector('.video-settings-menu');  
+
+var Video_Settings_Btn = document.querySelector('.movie-settings-button');
+
+
+var Video_Paused_Display = document.querySelector('.Display-Video-Paused');
+  
+var Video_Progress_Time = document.querySelector('.play-time');  
+  
+    
+
+  
+var MovieInfoSection = document.querySelector('.movie-info-header');
+
+var MovieInfoBtn = document.querySelector('.movie-info-button');
+  
+var SubtitleBtn = document.querySelector('.movie-subtitle-button');  
+  
+  
+
+  
+var progressSlider = document.querySelector('.progress');
+  var progressFill = document.querySelector('.progress-filled');
+
+var AlbumCoverMode_progressSlider = document.querySelector('.album_cover_progress');  
+  
+  
+var AlbumCoverMode_progressSliderFill = document.getElementById('albumcoverprogress_filled');    
+  
+function updateProgress(e) {
+	progressFill.style.width = `${video.currentTime/video.duration*100}%`;
+ AlbumCoverMode_progressSliderFill.style.width = `${video.currentTime/video.duration*100}%`;
+}
+function setProgress(e) {
+	const newTime = e.offsetX/progressSlider.offsetWidth;
+	progressFill.style.width = `${newTime*100}%`;
+	video.currentTime = newTime*video.duration;
+}
+
+
+//PLAYER FUNCTIONS
+
+
+  // Hide Subtitles on Default
+for (var i = 0; i < video.textTracks.length; i++) {
+   video.textTracks[i].mode = 'hidden';
+}
+
+  
+  
+
+  
+
+function togglePause() {
+	if (video.paused) {
+		video.play();
+	} else {
+		video.pause();	
+	}
+	pauseBtn.style.display = "none";
+  Video_Paused_Display.style.display = "block";
+  playBtn.style.display = "block";
+  Video_Progress_Time.style.top = "325px";
+}
+
+
+function togglePlay() {
+   video.play();
+  pauseBtn.style.display = "block";
+  Video_Paused_Display.style.display = "none";
+   playBtn.style.display = "none";
+  Video_Progress_Time.style.top = "335px";
+}
+  
+  
+     var NextBtn = document.querySelector('.next-chapter-button');
+  var i = 0;
+ function NextItem(){
+   
+   var videoPlayer = document.getElementById('video');
+i = i + 1; // increase i by one
+   // if we've gone too high, start from `0` again
+ChangeVideoSource(VideoSources[i],VideoTitles[0],VideoGenres[0], AlbumCovers[0]);
+     
+      UpdateVideoCardInfo(AlbumCovers[0], VideoTitles[0], VideoGenres[0]);
+ if(i === 0){
+        videoPlayer.onended = function(){
+    Stop_Player();
+     window.open("#","_self")
+        }
+    }   
+ } 
+  
+  
+  
+ var MovieInfoBtn_clicks = 0;
+function MovieInfo() {
+   MovieInfoSection.style.display = "block";
+  opacity: 0;
+  MovieInfoBtn_clicks += 1;
+ if(MovieInfoBtn_clicks == 2){
+			  MovieInfoSection.style.display = "none";
+  opacity: 1;
+   MovieInfoBtn_clicks = 0;
+		}
+}
+
+ 
+
+  
+// Subtitles Settings Menu Functions
+
+function ShowSubtitlesSettingsMenu(){
+    var SubtitlesSettingsMenu = document.getElementById("SubtitlesSettingsMenu");
+
+      SubtitlesSettingsMenu.style.opacity = "1";
+     SubtitlesSettingsMenu.style.zIndex = "1000";
+ 
+}
+
+
+
+
+function HideSubtitlesSettingsMenu(){
+      var SubtitlesSettingsMenu = document.getElementById("SubtitlesSettingsMenu");
+  
+   
+      SubtitlesSettingsMenu.style.opacity = "0";
+     SubtitlesSettingsMenu.style.zIndex = "0";
+ 
+}
+
+
+
+
+// Subtitles 
+
+// Detect Toggle Check On / Off  
+
+
+
+function ToggleSubtitles() {
+  var Toggle = document.getElementById("SubtitlesToggleSwitch");
+  if (Toggle.checked) {
+     for (var i = 0; i < video.textTracks.length; i++) {
+   video.textTracks[i].mode = 'showing';
+}
+  } else {
+   		for (var i = 0; i < video.textTracks.length; i++) {
+   video.textTracks[i].mode = 'hidden';
+}
+  }
+}
+
+  
+function VideoSettings_Menu() {
+   Video_Settings_Menu.style.display = "block";
+}
+
+  
+function VideoSettings_Menu_Click() {
+   Video_Settings_Menu.style.display = "none";
+}  
+
+SubtitleBtn.addEventListener('click',  ShowSubtitlesSettingsMenu);
+
+  
+  
+pauseBtn.addEventListener('click', togglePause);
+  
+  
+
+playBtn.addEventListener('click', togglePlay);
+NextBtn.addEventListener('click', NextItem);  
+
+MovieInfoBtn.addEventListener('click', MovieInfo);
+
+
+Video_Settings_Btn.addEventListener('click', VideoSettings_Menu);
+Video_Settings_Menu_Items.addEventListener('click', VideoSettings_Menu_Click);
+  
+  
+  
+video.addEventListener('timeupdate', updateProgress);
+  
+progressSlider.addEventListener('click', setProgress);  
+</script>
+<script type ="text/javascript">
+     
+/// Video / Audio Playlist 
+ function VideoPlayList(){
+   
+
+
+   var videoPlayer = document.getElementById('video');
+   
+
+     
+     if (VideoSources.length > 0) {
+videoPlayer.onended = function(){
+    ChangeVideoSource(VideoSources[0],VideoTitles[0],VideoGenres[0], AlbumCovers[0]);
+     
+      UpdateVideoCardInfo(AlbumCovers[0], VideoTitles[0], VideoGenres[0]);
+     
+     
+     
+     
+  if (VideoSources.length === 0)  {
+     
+  
+    Stop_Player();
+     window.open("#","_self")
+     
+     
+} else {
+     videoPlayer.play();
+  VideoSources.shift();
+     VideoTitles.shift();
+     VideoGenres.shift();
+     AlbumCovers.shift();
+}
+
+}
+  } 
+ }
+  </script>
+
+  <div class="bg-video-wrap">
+ 
+    
+    <!--- Album Cover Container --> 
+<div class="AlbumCoverContainer">
+  <img id="AlbumArt"
+     src="">
+  <h3 id="AlbumArtSong"> Hello </h3>
+  <h4 id="AlbumArtArtist"> Hello </h4>
+    </div>
+         <div id ="album_cover_progress">
+           	<div id="albumcoverprogress_filled"></div>
+  </div>
+			
+    <video id="video" crossorigin="anonymous">
+  <source src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'  autoplay   poster="images/FFFFFF-0.png" type='video/mp4'>
+     
+  <track id="track" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/191332/subtitles.vtt" kind="subtitles" srclang="en" label="Nightmare" default />
+</video>
+
+    <output
+							id="bubble"
+							style="
+								position: absolute;
+								color: black;
+								margin-top: -30px;
+								background: rgba(255, 255, 255, 0.835);
+								border-radius: 2px;
+								visibility: hidden;
+								padding: 5px;
+							"
+							for="timeplay"
+							class="bubble"f
+							onforminput="value = timeplay.valueAsNumber;"
+							>0:0</output
+						>
+    
+
+<div class="slide-header in"><h3 id="VideoTitle"><b>Harry Potter and The Olrder Of The Phoenix</b></h3>
+  <h5 id="VideoGenre"><b>Adventure / Family / Fanatsy / Mystery</b></h5>
+  <h1 id="MovieClock"><b>10:59 AM</b></h1>
+  <h4 id="ContentEndsAt">Ends at <span id="hour"></span>:<span id="minutes"></span></h4>
+  
+  <div class="BottomOverlayBackground"></div>
+     
+    
+  <div class="play-time"><span id="curtimetext">00:00</span> / <span id="durtimetext">02:45:69</span></div>
+  <div class="Display-Video-Paused">Paused</div>
+    <div class="backward-button"><i class="fa fa-fast-backward fa-2x"></i></div>
+  
+  <div class="pause-button"><i class="fa fa-pause fa-2x"></i></div>
+    <div class="play-button"><i class="fa fa-play fa-2x"></i></a></div>
+  
+  <div class="stop-button"><a href="#"  onclick="Stop_Player()"><i class="fa fa-stop fa-2x"></i></a></div>
+
+  <div class="next-chapter-button"><i class="fa fa-fast-forward fa-2x"></i></div>
+  
+  <div class="home-button"><a href="#"><i class="fa fa-home fa-2x"></i></a></div>
+  
+     <div class="movie-info-button"><i class="fa fa-info fa-2x"></i></div>
+  
+    <div class="movie-bookmark-button"><i class="fa fa-bookmark fa-2x"></i></div>
+
+      
+      <div class="movie-subtitle-button"><i onclick="ShowSubtitlesSettingsMenu()" class="far fa-comment-alt fa-2x"></i></div>
+   
+        <div class="movie-settings-button"><i class="fa fa-gear fa-2x"></i></a></div>
+  <div class="progress" id="progresstime">
+				<div class="progress-filled"></div>
+   
+			</div>
+  
+  
+  </div></div>
+
+
+<div class="movie-info-header in"><img id="VideoCard_Image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScZzVeMubcGWsczI2P17veQwDThIL1PhiVR-EQgBBMFvcxK8Drw4x6Qw2Xd7RCJ4yw6q8&usqp=CAU"><div class="movie-info-header-text"><h3 id="VideoCard_ShortTitle"><b>No one can protect you...</b></h3>
+
+  
+  <p id="VideoCard_Description">After a lonely summer on Privet Drive, Harry (Daniel Radcliffe) returns to a Hogwarts full of ill-fortune. Few of students and parents believe him or Dumbledore (Sir Michael Gambon) that Voldemort (Ralph Fiennes) is really back. The ministry had decided to step in by appointing a new Defense Against the Dark Arts teacher, Professor Dolores Umbridge (Imelda Staunton), who proves to be the nastiest person Harry has 
+ever encountered. Harry also can't help stealing glances with the beautiful Cho Chang (Katie Leung). To top it off are dreams that Harry can't explain, and a mystery behind something for which Voldemort is searching. With these many things, Harry begins one of his toughest years at Hogwarts School of Witchcraft and Wizardry.</p></div></div>
+
+
+
+<div class="video-settings-menu">
+
+    <div class="video-settings-title">
+      <b> Settings</b>
+    </div>
+
+      <div id='video-settings-context-menu'>
+<ul>
+   <li onclick="ShowAudioSettingsMenu();">Audio settings</li>
+   <li onclick="ShowSubtitlesSettingsMenu();">Subtile settings</a></li>
+   <li><a href='#'>Video settings</a></li>
+   <li><a href='#'>Toggle audio stream</a></li>
+   <li><a href='#'>Select Program</a></li>
+ 
+</ul>
+</div>
+    </div>
+
+</div>
+  
+    </div>
+
+<div id="Youtube-VideoPlayer-Popup" class="PhotoGallery_overlay">
+    
+    <img src="" id="PhotoGallery" class="fullscreen">
+  <div class="PhotoGallery_Clock_Container">
+    
+  <h1 id="PhotoGalleryClock">hello</h1>
+  </div>
+  <a href="#"><button id="PhotoGallery_Btn" style="background-color:cyan;">Click To Close</button></a>
+      
+  
+  </div>
+
+<!----- Context Menu---->
+
+<div id='context-menu'>
+<ul>
+   <li><a href='#'>Play</a></li>
+   <li><a href='#'>Add To Favourites</a></li>
+   <li><a href='#'>Edit Source</a></li>
+   <li><a href='#'>Remove Source</a></li>
+   <li><a href='#'>Choose Thumbnail</a></li>
+   <li><a href='#'>Scan For New Content</a></li>
+</ul>
+</div>
+
+<!------ Out Click for Right Click Menu --->
+
+<div id="out-click"></div>
+
+
+<!-------- Notification -->
+
+
+<div id="Notification_1">
+  </div>
+
+
+<!-------- Audio Settings Menu -->
+<div class="audio-settings-menu" id="AudioSettingsMenu">
+
+    <div class="audio-settings-title">
+      <b> Audio Settings</b>
+    </div>
+
+    <div class="audio-settings-content">
+    
+<div class="audio-settings-inner-content">			
+  <div class="audio-settings-scrollbar" style="direction: rtl;">
+	  <div class="audio-settings-overflow">
+      
+      
+      
+       <li><div class="number_text" id="VolumeStepper_Value"><p>0</p></div> Volume<input id="VolumeStepper" type="range" min="0" max="100" step="1" value="0"></li>
+      
+      
+      <li style="direction:ltr;"><div class="number_text" id="Volume_Amplification_Stepper_Value"><p>0</p></div> Volume Amplification<input id="Volume_Amplification_Stepper" type="range" min="0" max="100" step="1" value="0"></li>
+      
+      
+      <li><div class="number_text" id="Up_Down_Stepper"><p id="StepperValue">0</p>
+        
+       
+        
+       <i  id="StepperUp" class="fa fa-arrow-up"></i>
+        
+        <i  id="StepperDown" class="fa fa-arrow-down"></i>  List Item</li>
+      
+      
+      
+      <li><label class="audio-settings-toggle ">
+	<input class="toggle-checkbox" type="checkbox" id="ToggleSwitch">
+	<div class="toggle-switch"></div>
+	List Item </li>
+      
+      
+      <li id="DisabledItem">Audio Stream (Disabled Item)</li>
+       <li onmouseover="Show_NoInfo_Item();" id="LastListItem">Allow passthrough </li>
+      <li>Set as default for all media </li>
+     <li id="EmptySection"> </li>
+	      
+      
+      
+	    </div>
+	</div>
+ 
+</div>
+ <a onclick="HideAudioSettingsMenu();" class="BUTTON_1" style="float: right;">Close Menu</a>    
+   
+    
+
+</div>
+  
+  
+</div>
+
+<!-------- Audio Settings Menu -->
+<div class="audio-settings-menu" id="SubtitlesSettingsMenu">
+
+    <div class="audio-settings-title">
+      <b> Subtitles Settings</b>
+    </div>
+
+    <div class="audio-settings-content">
+    
+<div class="audio-settings-inner-content">			
+  <div class="audio-settings-scrollbar" style="direction: rtl;">
+	  <div class="audio-settings-overflow">
+      
+
+      
+      <li><label class="audio-settings-toggle ">
+	<input onclick="ToggleSubtitles();" class="toggle-checkbox" type="checkbox" id="SubtitlesToggleSwitch">
+	<div class="toggle-switch"></div>
+	Subtiles </li>
+      
+      
+      <li id="DisabledItem">Example (Disabled Item)</li>
+       <li id="LastListItem">Change Subtitles </li>
+      <li>Download Subtitles</li>
+     <li id="EmptySection"> </li>
+	      
+      
+      
+	    </div>
+	</div>
+ 
+</div>
+ <a onclick="HideSubtitlesSettingsMenu();" class="BUTTON_1" style="float: right;">Close Menu</a>    
+   
+    
+
+</div>
+</div>
+  
+  
+  
+  
+  
+  <!----- Addon Example --->
+
+<section id='addonexample1'>
+    <header class="header">
+      <div class="header__navbar">
+        <nav class="navbar">
+          <div class="SectionTitle">
+           
+            <h2>Addons/ <span>Example 1</h2>
+            <h3 style="color: white">Sort By Date</h3>
+          </div>
+     
+      </div>
+      <div class="header__left">
+        <div class="slider" >
+          <p onclick="ShowOptionsMenu();" id="OptionMenu_Button"> 
+             <i class="fa fa-gear"></i>
+            <span>Options</p></a>
+   <div class="Icon_Section"><i class="fa fa-folder fa-5x"></i>
+
+   </div>    
+   <p id="ItemLibrary_NoInfoText">No Information Avaliable</p>       
+    
+        </div>
+        
+          <div class="Library_Item_Details_Section">
+                   <img src="https://variety.com/wp-content/uploads/2020/05/the-simpsons-1.png">
+            <p>Hello world - keepllookling for awesome projects made by me! Test one twooooooooooooooo lresdcsdfa</p>
+        </div>
+            
+            
+      </div>
+      <div class="header__right">
+    
+
+
+
+      <ul>
+    <a href="#VideoPlayer-Popup">   <li onclick="ChangeVideoSource('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4', 'Video Title Example','Video Genre'); UpdateVideoCardInfo('https://m.media-amazon.com/images/M/MV5BMTczMDg2MzkwNl5BMl5BanBnXkFtZTcwNTY0MTM0MQ@@._V1_.jpg', 'Trailer Park Boys: The Movie','The Movie Description Goes Here!');"> Play addon item in movie player</li></a>
+        <a href="#"><li>Click To Go Back To Home Screen</li></a>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+	    <li>List Item</li>
+      <li>List Item</li>
+       </ul>
+	    </div>
+
+          
+        </div>
+    </header>
+  </section>    
+       
