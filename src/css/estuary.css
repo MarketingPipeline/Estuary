@@ -1985,6 +1985,204 @@ video.loading {
   
 
 
+/* Modals / Menus */
+
+
+/* Modal #1 */ 
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto', "Helvetica Neue", Helvetica, sans-serif;
+}
+.modal .modal-content {
+  width: 85%;
+  max-width: 850px;
+  position: relative;
+  margin: 120px auto 30px auto;
+  padding: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.2s;
+  background: rgba(26, 25, 34, 8);
+  border: 1px solid rgba(26, 25, 34, 0.3);   
+}
+.modal .modal-content h5 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.modal .modal-content p {
+  font-size: 1rem;
+}
+.modal .modal-content li {
+  font-size: 1em;
+}
+.modal .modal-content hr {
+  border: 1px solid #2d2d2d;
+  margin: 5px 0 12px 0;
+}
+.modal .modal-content .modal-header {
+  padding: 10px 15px 0 15px;
+ background: rgba(71, 160, 255, 0.8);
+  background: linear-gradient(
+    top,
+    rgba(71, 160, 255, 0.8) 0%,
+    rgba(0, 49, 99, 0.6) 100%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid rgba(30, 30, 30, 0.5);
+  box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.6);
+}
+.modal .modal-content .modal-header h5 {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Electrolize', "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.modal .modal-content .modal-header h5 i {
+  font-size: 1.15rem;
+  margin-right: 13px;
+}
+.modal .modal-content .modal-body {
+  float: initial;
+  color: #DDD;
+  max-height: 450px;
+  padding: 25px 50px 15px 50px;
+}
+.modal .modal-content .modal-footer {
+  padding: 2px 16px;
+  background-color: #212121;
+  border: none;
+  display: block;
+  position: relative;
+  text-align: right;
+    border-top: 2px solid rgb(255 255 255 / 23%);
+    
+  background: rgba(26, 25, 34, 8);
+}
+.modal .modal-content .modal-footer #close1, .modal .modal-content .modal-footer #close2 {
+  height: 30px;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  color: #2dbda8;
+  text-shadow: none;
+  margin: 7px 0 7px 5px;
+  padding: 0 13px 0 13px;
+  background: #2d2d2d;
+  border: 0;
+  transition: 0.08s;
+  border-radius: 15px;
+}
+.modal .modal-content .modal-footer #close1 i, .modal .modal-content .modal-footer #close2 i {
+  margin-right: 6px;
+}
+.modal .modal-content .modal-footer #close1:hover, .modal .modal-content .modal-footer #close2:hover, .modal .modal-content .modal-footer #close1:focus, .modal .modal-content .modal-footer #close2:focus {
+  background-color: #434343;
+  text-decoration: none;
+  cursor: pointer;
+}
+@keyframes animatetop {
+  from {
+    top: -30px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 1400px) {
+  .modal .modal-content {
+    margin: 70px auto 30px auto;
+  }
+}
+/*----- Modal tabs -----*/
+.modal-tabs {
+  overflow: hidden;
+  background-color: #2d2d2d;
+}
+.modal-tabs button {
+  font-size: 0.9rem;
+  color: #2c97de;
+  letter-spacing: 1px;
+  font-family: 'Electrolize', "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #2d2d2d;
+  float: left;
+  border: 0;
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 17px;
+  margin: 0 5px 0 0;
+  transition: 0.2s;
+}
+.modal-tabs button.active {
+  background-color: #212121;
+}
+.modal-tabs button.active:hover {
+  background-color: #212121;
+}
+.modal-tabs button:hover {
+  background-color: #434343;
+}
+.tabcontent {
+  display: none;
+  min-height: 200px;
+}
+#modal-info table {
+  min-width: 70%;
+  font-size: 0.9em;
+}
+.scrollbar {
+  float: left;
+  overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #434343;
+}
+.scrollbar {
+  float: left;
+  overflow-y: scroll;
+}
+.scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #434343;
+}
+
+/* End of Modal #1 */ 
+
 
 /* Dialog Menu 1 - Progress Menu */
 
