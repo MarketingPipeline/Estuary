@@ -158,7 +158,7 @@ src="https://cdn4.iconfinder.com/data/icons/refresh_cl/256/Windows/Windows_Downl
        
         
     <div class="swiper-slide">
-          <a href="#"  onclick="ChangeVideoSource('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4', 'Video Title Example','Video Genre'); UpdateVideoCardInfo('https://m.media-amazon.com/images/M/MV5BMTczMDg2MzkwNl5BMl5BanBnXkFtZTcwNTY0MTM0MQ@@._V1_.jpg', 'Trailer Park Boys: The Movie','The Movie Description Goes Here!');">
+          <a href="#">
           <div class="item" id="swipe_card_item">
                 <div class="image"><img class="image"
 src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
@@ -206,7 +206,7 @@ src="https://i.pinimg.com/originals/4e/ec/e4/4eece43baaad059ce2e4c462d30743d2.pn
         
         
          <div class="swiper-slide">
-          <a href="#"  onclick="ChangeVideoSource('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3', 'Rockstar','Post Malone, 21 Savage','https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg'); UpdateVideoCardInfo('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg', 'Album Title Goes Here','Track list goes here');">
+          <a href="#">
           <div class="item" id="swipe_card_item">
                 <div class="image"><img class="image"
 src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
@@ -220,7 +220,7 @@ src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
         
         
          <div class="swiper-slide">
-          <a href="#"  onclick="ChangeVideoSource('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Marshmello%20-%20Silence%20ft.%20Khalid.mp3', 'Silence','Marshmellow','https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/silence-album-cover.jpg'); UpdateVideoCardInfo('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/silence-album-cover.jpg', 'Album Title Goes Here','Track list goes here');">
+          <a href="#">
           <div class="item" id="swipe_card_item">
                 <div class="image"><img class="image"
 src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
@@ -235,7 +235,7 @@ src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
         
         
          <div class="swiper-slide">
-          <a href="#"  onclick="VideoPlayList();">
+          <a href="#">
           <div class="item" id="swipe_card_item">
                 <div class="image"><img class="image"
 src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
@@ -249,7 +249,7 @@ src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
         
         
          <div class="swiper-slide">
-          <a href="#"  onclick="addItemsToPlaylist('https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3', 'Rockstar','Post Malone, 21 Savage','https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg');">
+          <a href="#">
           <div class="item" id="swipe_card_item">
                 <div class="image"><img class="image"
 src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
@@ -679,39 +679,7 @@ src="https://i.pinimg.com/736x/cd/df/00/cddf000b42d259167e1f394d14fd1511.jpg"
     </div>
    
   </section>       
-       
-       <script>
-         
-
-//This variable sets how long we wait between images
-var minutes = 0.1;
-
-//This variable is the location of our JSON gallery
-var galleryUrl = "https://cdn.rawgit.com/dconnolly/chromecast-backgrounds/master/backgrounds.json";
-var imageList;
-
-function cycleImage() {
-  var imageNumber = Math.floor((Math.random() * imageList.length) + 1);
-  showImage(imageList[imageNumber]['url']);
-  setTimeout (cycleImage,minutes*60*1000);
-}
-
-function showImage(imageUrl) {
-  document.getElementById("PhotoGallery").src=imageUrl;
-}
-
-
-async function fetchDataAsync(url) {
-    const response = await fetch(url);
-    imageList = (await response.json());
-      cycleImage();
-}
-
-fetchDataAsync(galleryUrl);
-
-
-       </script>
-       
+      
        
        <script>
          
@@ -723,59 +691,6 @@ function KeyBoardCancel(){
 
          
          
-  function ChangeVideoSource(src,title,genre, albumCoverArt) {
-    
-    
-    var progressFill = document.querySelector('.progress-filled');
-	progressFill.style.width = `0px`
-    
-    var Video = document.getElementById("video")
-  var VideoTitle = document.getElementById("VideoTitle")
-  var VideoGenre = document.getElementById("VideoGenre")
-   
-   var AlbumCoverContainer = document.querySelector('.AlbumCoverContainer');
-  ResultVolumeSettings();
-   
-      var PlayerOverlay = document.getElementById("VideoPlayer-Popup")
-      var AlbumCoverProgress=  document.getElementById("album_cover_progress");
-    
-  var AlbumCoverProgressSlider=  document.getElementById("albumcoverprogress_filled");  
-
-  
-   if (albumCoverArt) {
-
- var AlbumCoverImage =  document.getElementById("AlbumArt").src=albumCoverArt;
-     
-      document.getElementById("AlbumArtSong").innerHTML = title;
-     
- document.getElementById("AlbumArtArtist").innerHTML = genre;     
-   
- AlbumCoverProgress.style.opacity = "1";      
- AlbumCoverContainer.style.display = "block";      AlbumCoverContainer.style.backgroundImage="red";
-     
-  
-  
- PlayerOverlay.style.background="linear-gradient(to right, rgb(6, 38, 52), rgb(7, 51, 65))";
-  } else {
-       AlbumCoverProgress.style.opacity = "0";        
-       
-      PlayerOverlay.style.background=" rgba(0, 0, 0, 0.7)";
-   
-    
-   
-    
-    
-    
-    AlbumCoverContainer.style.display = "none"; 
-     var AlbumCoverImage =  document.getElementById("AlbumArt").src="";   
-  }
-  
-    
-    
-  
-   Video.src = src;
-  VideoTitle.innerHTML = title;
-  VideoGenre.innerHTML = genre;}
          
          var KeyboardInput = (function(GetKeyboardInput) {
   return function() {
@@ -1347,24 +1262,6 @@ function togglePlay() {
 }
   
   
-     var NextBtn = document.querySelector('.next-chapter-button');
-  var i = 0;
- function NextItem(){
-   
-   var videoPlayer = document.getElementById('video');
-i = i + 1; // increase i by one
-   // if we've gone too high, start from `0` again
-ChangeVideoSource(VideoSources[i],VideoTitles[0],VideoGenres[0], AlbumCovers[0]);
-     
-      UpdateVideoCardInfo(AlbumCovers[0], VideoTitles[0], VideoGenres[0]);
- if(i === 0){
-        videoPlayer.onended = function(){
-    Stop_Player();
-     window.open("#","_self")
-        }
-    }   
- } 
-  
   
   
  var MovieInfoBtn_clicks = 0;
@@ -1445,7 +1342,6 @@ pauseBtn.addEventListener('click', togglePause);
   
 
 playBtn.addEventListener('click', togglePlay);
-NextBtn.addEventListener('click', NextItem);  
 
 MovieInfoBtn.addEventListener('click', MovieInfo);
 
@@ -1459,45 +1355,7 @@ video.addEventListener('timeupdate', updateProgress);
   
 progressSlider.addEventListener('click', setProgress);  
 </script>
-<script type ="text/javascript">
-     
-/// Video / Audio Playlist 
- function VideoPlayList(){
-   
 
-
-   var videoPlayer = document.getElementById('video');
-   
-
-     
-     if (VideoSources.length > 0) {
-videoPlayer.onended = function(){
-    ChangeVideoSource(VideoSources[0],VideoTitles[0],VideoGenres[0], AlbumCovers[0]);
-     
-      UpdateVideoCardInfo(AlbumCovers[0], VideoTitles[0], VideoGenres[0]);
-     
-     
-     
-     
-  if (VideoSources.length === 0)  {
-     
-  
-    Stop_Player();
-     window.open("#","_self")
-     
-     
-} else {
-     videoPlayer.play();
-  VideoSources.shift();
-     VideoTitles.shift();
-     VideoGenres.shift();
-     AlbumCovers.shift();
-}
-
-}
-  } 
- }
-  </script>
 
   <div class="bg-video-wrap">
  
@@ -1552,7 +1410,7 @@ videoPlayer.onended = function(){
   <div class="pause-button"><i class="fa fa-pause fa-2x"></i></div>
     <div class="play-button"><i class="fa fa-play fa-2x"></i></a></div>
   
-  <div class="stop-button"><a href="#"  onclick="Stop_Player()"><i class="fa fa-stop fa-2x"></i></a></div>
+  <div class="stop-button"><a href="#"><i class="fa fa-stop fa-2x"></i></a></div>
 
   <div class="next-chapter-button"><i class="fa fa-fast-forward fa-2x"></i></div>
   
@@ -1780,7 +1638,7 @@ ever encountered. Harry also can't help stealing glances with the beautiful Cho 
 
 
       <ul>
-    <a href="#VideoPlayer-Popup">   <li onclick="ChangeVideoSource('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4', 'Video Title Example','Video Genre'); UpdateVideoCardInfo('https://m.media-amazon.com/images/M/MV5BMTczMDg2MzkwNl5BMl5BanBnXkFtZTcwNTY0MTM0MQ@@._V1_.jpg', 'Trailer Park Boys: The Movie','The Movie Description Goes Here!');"> Play addon item in movie player</li></a>
+    <a href="#VideoPlayer-Popup">   <li> Play addon item in movie player</li></a>
         <a href="#"><li>Click To Go Back To Home Screen</li></a>
       <li>List Item</li>
 	    <li>List Item</li>
