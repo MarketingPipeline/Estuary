@@ -456,6 +456,130 @@ text-align: start;
 
 
 
+/* Movie Wall Library */ 
+.movie-wall:target{
+   z-index:3;
+}
+
+.movie-wall i {
+  font-family: 'Lato';
+  font-weight: 100;
+  width: 100%;
+}
+.movie-wall p {
+  font-size: large;
+  margin-top: 20px;
+}
+.movie-wall button {
+  color: #000;
+}
+/* General Layout */
+.movie-wall .layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100vw;
+}
+/* Sidemenu */
+.movie-wall .sidemenu {
+  background: #0f1317;
+  color: #fff;
+  width: 300px;
+  z-index: 2;
+}
+.movie-wall .sidemenu__logo {
+  display: block;
+  background: #f3a42f;
+  height: 100px;
+}
+.movie-wall .sidemenu__title {
+  margin: 20px;
+}
+/* Settings Menu */
+.movie-wall .settings-menu {
+  width: 300px;
+  background: #616161;
+  z-index: 1;
+}
+.fade-transition {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.fade-enter {
+  width: 0;
+}
+.fade-leave {
+  width: 0;
+}
+.fade-transition * {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.5s;
+}
+.fade-enter * {
+  opacity: 0;
+  transition-delay: 0.5s;
+}
+.fade-leave * {
+  opacity: 0;
+  transition-duration: 0s;
+  transition-delay: 0s;
+}
+.movie-wall .settings-menu > * {
+  margin: 20px;
+  color: #fff;
+}
+/* Content */
+.movie-wall .flexcontainer-content {
+  flex-basis: 50vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: #083548;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
+}
+.movie-wall .flexitem-grid {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 20px;
+  color: #fff;
+  width: 15vmax;
+  height: 21vmax;
+  margin-bottom: 40px;
+  margin-right: 5px;
+}
+.movie-wall .flexitem-grid img {
+  width: 100%;
+  height: 100%;
+}
+.movie-wall .flexitem-grid img:hover, .flexitem-grid img:active {
+  box-shadow: 0.2em 0.5em 0.5em rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
+  border: 2px solid cyan;
+}
+.movie-wall .scrollbar {
+  float: left;
+  overflow-y: scroll;
+}
+.movie-wall .scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.movie-wall .scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.movie-wall .scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: blue;
+}
+
+
 
 
  /* Empty Library Section */ 
