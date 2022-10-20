@@ -212,7 +212,7 @@ a {
 .s-sidebar__nav-link:hover {
    background: #1085a8;
    color:white;
-   border-left: 75px solid red;
+   border-left: 75px solid #065c6b;
 }
 
 .s-sidebar__nav-link:hover >i {
@@ -761,7 +761,7 @@ padding-left: 10px;
 
 
 .swiper-slide p:hover{
-  background-color:red;
+  background-color:#065c6b;
   
 }
 
