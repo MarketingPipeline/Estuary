@@ -4,20 +4,17 @@
 
 <p align="center">
 
-  <img width="120" src="https://user-images.githubusercontent.com/86180097/182456561-ee7e1084-38a1-4aba-a70f-511cdae549c3.png" />
+  <img width="120" src="https://i.imgur.com/k7QUaB6.png" />
   <br>
 A design framework that looks like the default Kodi theme
 </p>
 
 
 
-
-
-
 > This project is <b>currently in progress</b> &  <b>not ready for production / usage</b>. We are currently looking for contributors to help with improvents for this project if you are interested in seeing how you can help contribute to this project see the [to-do](.github/to-do.md) list.
   
   
-## Demo <img height="20px" src="https://user-images.githubusercontent.com/86180097/196882107-dd4b5f16-01c5-4e13-af91-dc236e386884.png">
+## Demo <img height="20px" src="https://user-images.githubusercontent.com/86180097/196882869-d38fe649-8e33-44fe-ae91-b1f9cd5f1c3e.png">
 
 > WARNING: This is a work in progress, you will find a LOT of responsiveness issues when viewing the demo! 
 
