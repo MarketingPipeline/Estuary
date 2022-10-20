@@ -7,6 +7,16 @@
   <img width="120" src="https://i.imgur.com/k7QUaB6.png" />
   <br>
 A design framework that looks like the default Kodi theme
+ <br>
+  <small> <b><i>Show your support!</i> </b></small>
+  <br>
+   <a href="https://github.com/MarketingPipeline/Estuary">
+  <img title="Star on GitHub" src="https://img.shields.io/github/stars/MarketingPipeline/Estuary.svg?style=social&label=Star">
+  </a>
+  <a href="https://github.com/MarketingPipeline/Estuary">
+    <img title="Fork on GitHub" src="https://img.shields.io/github/forks/MarketingPipeline/Estuary.svg?style=social&label=Fork">
+  </a>
+
 </p>
 
 
