@@ -17,11 +17,11 @@ A design framework that looks like the default Kodi theme
 > This project is <b>currently in progress</b> &  <b>not ready for production / usage</b>. We are currently looking for contributors to help with improvents for this project if you are interested in seeing how you can help contribute to this project see the [to-do](.github/to-do.md) list.
   
   
-## Demo <img height="20px" src="https://im4.ezgif.com/tmp/ezgif-4-8ab294c963.png">
+## Demo <img height="20px" src="https://user-images.githubusercontent.com/86180097/196882107-dd4b5f16-01c5-4e13-af91-dc236e386884.png">
 
 > WARNING: This is a work in progress, you will find a LOT of responsiveness issues when viewing the demo! 
 
-You can view a live demo of the <b>Estuary</b> framework [here](here) 
+You can view a live demo of the <b>Estuary</b> framework [here](https://marketingpipeline.github.io/Estuary/demo) 
 
 ## See also <img height="20px" src="https://zefir.site/emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/57/white-left-pointing-backhand-index_1f448.png">
 
