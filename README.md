@@ -21,7 +21,7 @@ A design framework that looks like the default Kodi theme
 
 
 
-> This project is <b>currently in progress</b> &  <b>not ready for production / usage</b>. We are currently looking for contributors to help with improvents for this project if you are interested in seeing how you can help contribute to this project see the [to-do](.github/to-do.md) list.
+> This project is <b>currently in progress</b> &  <b>not ready for production / usage</b>. We are currently looking for contributors to help with improvents for this project if you are interested in seeing how you can help contribute to this project see the [to-do](.github/TO-DO.md) list.
   
   
 ## Demo <img height="20px" src="https://user-images.githubusercontent.com/86180097/196882869-d38fe649-8e33-44fe-ae91-b1f9cd5f1c3e.png">
