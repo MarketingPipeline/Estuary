@@ -17,6 +17,19 @@
 - [ ] Find more contributors to help with this project! 
 
 
+
+## Inspiration 
+
+Here is some inspiration for the User Experience for responsive / mobile devices. 
+
+| Classic | Improved Plex Mobile |
+|:---:|:---:|
+| ![Classic](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/classic_1.png)  | ![New](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/new_1.png) |
+| ![Classic](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/classic_2.png)  | ![New](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/new_2.png) |
+| ![Classic](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/classic_3.png)  | ![New](https://archmonger.github.io/Improved-Plex-Mobile/screenshots/new_3.png) |
+
+
+
 ## Notes 
 
 When working on any of these tasks - look at a currently already improved version of this project here [Estuary Redux](https://github.com/MarketingPipeline/Estuary-Redux). To make maintain both of these projects easier, if possible try to re-use the same class names & HTML structures from it (if possible)
